@@ -1,0 +1,33 @@
+{
+  "name": "better-tanks",
+  "version": "1.0.0",
+  "description": "Better Tanks: Dhamaka Edition - High-Performance 3D Arcade Tank Combat Simulator built with Three.js, Web Audio API, and Vite.",
+  "type": "module",
+  "main": "index.html",
+  "scripts": {
+    "dev": "vite",
+    "build": "vite build",
+    "preview": "vite preview"
+  },
+  "keywords": [
+    "threejs",
+    "webgl",
+    "game",
+    "tank-game",
+    "bollywood",
+    "arcade",
+    "vite",
+    "browser-game",
+    "3d"
+  ],
+  "author": "Shubhransh Gupta",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/shubhransh-gupta/better-tanks.git"
+  },
+  "dependencies": {
+    "three": "^0.187.0",
+    "vite": "^8.3.8"
+  }
+}
