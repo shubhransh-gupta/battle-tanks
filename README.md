@@ -1,16 +1,16 @@
-# 🚀 Better Tanks: Dhamaka Edition 🇮🇳
+# 🚀 Battle Tanks: Dhamaka Edition 🇮🇳
 
-[![Live Demo](https://img.shields.io/badge/Live%20Demo-better--tanks.vercel.app-000000?style=for-the-badge&logo=vercel&logoColor=white)](https://better-tanks.vercel.app)
-[![GitHub Repo](https://img.shields.io/badge/GitHub-shubhransh--gupta%2Fbetter--tanks-181717?style=for-the-badge&logo=github)](https://github.com/shubhransh-gupta/better-tanks)
+[![Live Demo](https://img.shields.io/badge/Live%20Demo-battle--tanks--dhamaka.vercel.app-000000?style=for-the-badge&logo=vercel&logoColor=white)](https://battle-tanks-dhamaka.vercel.app)
+[![GitHub Repo](https://img.shields.io/badge/GitHub-shubhransh--gupta%2Fbattle--tanks-181717?style=for-the-badge&logo=github)](https://github.com/shubhransh-gupta/battle-tanks)
 
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
 [![Three.js](https://img.shields.io/badge/Three.js-r187-black?logo=three.js)](https://threejs.org/)
 [![Vite](https://img.shields.io/badge/Vite-8.3-646CFF?logo=vite&logoColor=white)](https://vitejs.dev/)
 [![WebGL](https://img.shields.io/badge/WebGL-2.0-990000?logo=webgl&logoColor=white)](https://www.khronos.org/webgl/)
-[![Deployment](https://img.shields.io/badge/Deploy-Vercel-000000?logo=vercel&logoColor=white)](https://better-tanks.vercel.app)
+[![Deployment](https://img.shields.io/badge/Deploy-Vercel-000000?logo=vercel&logoColor=white)](https://battle-tanks-dhamaka.vercel.app)
 [![FPS](https://img.shields.io/badge/Performance-Locked%2060%20FPS-brightgreen)](#-features)
 
-> 🎮 **Play Live Now:** **[better-tanks.vercel.app](https://better-tanks.vercel.app)**
+> 🎮 **Play Live Now:** **[battle-tanks-dhamaka.vercel.app](https://battle-tanks-dhamaka.vercel.app)** *(Mirror: [better-tanks.vercel.app](https://better-tanks.vercel.app))*
 >
 > **High-Performance 3D Arcade Tank Combat Simulator built with Three.js, WebGL, Web Audio API, and Vite.**
 > Inspired by classic 3D armor games and powered by an authentic high-voltage Bollywood action soundtrack & aesthetic.
@@ -19,7 +19,7 @@
 
 ## 🌟 Overview
 
-**Better Tanks** reimagines 3D browser tank combat into a buttery-smooth, zero-lag experience. Engineered from the ground up to eliminate frame drops and geometry bottlenecks, it delivers locked 60+ FPS on both desktop and mobile browsers, paired with authentic Bollywood action sound design, dynamic lighting, articulated caterpillar tracks, and tactical wave combat.
+**Battle Tanks** reimagines 3D browser tank combat into a buttery-smooth, zero-lag experience. Engineered from the ground up to eliminate frame drops and geometry bottlenecks, it delivers locked 60+ FPS on both desktop and mobile browsers, paired with authentic Bollywood action sound design, dynamic lighting, articulated caterpillar tracks, and tactical wave combat.
 
 ---
 
@@ -127,8 +127,8 @@ better-tanks/
 ### Installation
 1. Clone the repository:
    ```bash
-   git clone https://github.com/shubhransh-gupta/better-tanks.git
-   cd better-tanks
+   git clone https://github.com/shubhransh-gupta/battle-tanks.git
+   cd battle-tanks
    ```
 
 2. Install dependencies:

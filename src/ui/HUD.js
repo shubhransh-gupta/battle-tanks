@@ -24,7 +24,7 @@ export class HUD {
         <!-- 1. Top Industrial Status Bar -->
         <header class="hud-top-bar">
           <div class="hud-brand">
-            <span class="hud-title">BETTER TANKS</span>
+            <span class="hud-title">BATTLE TANKS</span>
             <span class="hud-bollywood-pill">DHAMAKA EDITION 🇮🇳</span>
             <span class="hud-badge" id="hud-fps-pill">60 FPS</span>
           </div>
@@ -168,7 +168,7 @@ export class HUD {
         <div class="hud-modal" id="modal-start">
           <div class="hud-modal-card">
             <div class="modal-badge">BOLLYWOOD ACTION WARFARE EDITION 💥</div>
-            <h1 class="modal-title">BETTER TANKS</h1>
+            <h1 class="modal-title">BATTLE TANKS</h1>
             <p class="modal-subtitle">DHAMAKA EDITION // FULL BOLLYWOOD ACTION</p>
             <p class="modal-desc">
               Hostile mechanized rogue forces have captured Sector 7. Deploy your heavy combat tank, crank up the Bollywood beats, blast through scout squadrons, and defeat the colossal Titan MK-IV Boss!
