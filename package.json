@@ -23,6 +23,7 @@
   ],
   "author": "Shubhransh Gupta",
   "license": "MIT",
+  "homepage": "https://better-tanks.vercel.app/",
   "repository": {
     "type": "git",
     "url": "https://github.com/shubhransh-gupta/battle-tanks.git"
