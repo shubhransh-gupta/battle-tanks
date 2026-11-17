@@ -1,16 +1,16 @@
 # 🚀 Battle Tanks: Dhamaka Edition 🇮🇳
 
-[![Live Demo](https://img.shields.io/badge/Live%20Demo-better--tanks.vercel.app-000000?style=for-the-badge&logo=vercel&logoColor=white)](https://better-tanks.vercel.app/)
+[![Live Demo](https://img.shields.io/badge/Live%20Demo-playbattletanks.vercel.app-000000?style=for-the-badge&logo=vercel&logoColor=white)](https://playbattletanks.vercel.app)
 [![GitHub Repo](https://img.shields.io/badge/GitHub-shubhransh--gupta%2Fbattle--tanks-181717?style=for-the-badge&logo=github)](https://github.com/shubhransh-gupta/battle-tanks)
 
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
 [![Three.js](https://img.shields.io/badge/Three.js-r187-black?logo=three.js)](https://threejs.org/)
 [![Vite](https://img.shields.io/badge/Vite-8.3-646CFF?logo=vite&logoColor=white)](https://vitejs.dev/)
 [![WebGL](https://img.shields.io/badge/WebGL-2.0-990000?logo=webgl&logoColor=white)](https://www.khronos.org/webgl/)
-[![Deployment](https://img.shields.io/badge/Deploy-Vercel-000000?logo=vercel&logoColor=white)](https://better-tanks.vercel.app/)
+[![Deployment](https://img.shields.io/badge/Deploy-Vercel-000000?logo=vercel&logoColor=white)](https://playbattletanks.vercel.app)
 [![FPS](https://img.shields.io/badge/Performance-Locked%2060%20FPS-brightgreen)](#-features)
 
-> 🎮 **Play Live Now:** **[https://better-tanks.vercel.app/](https://better-tanks.vercel.app/)**
+> 🎮 **Play Live Now:** **[https://playbattletanks.vercel.app](https://playbattletanks.vercel.app)**
 >
 > **High-Performance 3D Arcade Tank Combat Simulator built with Three.js, WebGL, Web Audio API, and Vite.**
 > Inspired by classic 3D armor games and powered by an authentic high-voltage Bollywood action soundtrack & aesthetic.
