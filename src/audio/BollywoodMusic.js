@@ -1,7 +1,7 @@
 /**
- * BollywoodMusic.js - Authentic Bollywood Action Music & Audio Engine
- * Features official Bollywood action soundtracks (Dhoom, Don, Salaame) with Web Audio Equalizer
- * and procedural Punjabi Dhol/Sitar synthesizer fallback + Bollywood dialogue engine.
+ * CombatAudioEngine - Aggressive Phonk, Russian Drift Phonk & Action Soundtrack Engine
+ * Features high-octane combat tracks (Middle of the Night, DVRST, Kordhell, Interworld, MoonDeity)
+ * with real-time Web Audio Equalizer and procedural 808 Phonk Cowbell / Bass synthesizer fallback.
  */
 export class BollywoodMusic {
   constructor(soundManager) {
@@ -12,42 +12,50 @@ export class BollywoodMusic {
     this.mediaSource = null;
     this.audioEl = null;
     this.isPlaying = false;
-    this.volume = 0.75;
+    this.volume = 0.85;
     this.isMuted = false;
 
-    // Track metadata with authentic Bollywood soundtracks
+    // Track metadata with aggressive Phonk and action soundtracks
     this.tracks = [
       {
         id: 0,
-        title: "DHOOM MACHALE (TITLE ANTHEM)",
-        file: "/assets/music/dhoom-machale.mp3",
-        bpm: 134,
+        title: "ELLEY DUHÉ - MIDDLE OF THE NIGHT",
+        file: "/assets/music/middle-of-the-night.mp3",
+        bpm: 145,
         scale: [220, 246.94, 261.63, 293.66, 329.63, 349.23, 392.0, 440],
         melodyPattern: [0, 2, 4, 3, 2, 0, 4, 5, 4, 3, 2, 0, 3, 2, 0, -1]
       },
       {
         id: 1,
-        title: "DON - THE THEME (SRK ACTION)",
-        file: "/assets/music/don-theme.mp3",
-        bpm: 128,
-        scale: [220, 246.94, 277.18, 293.66, 329.63, 369.99, 392.0, 440],
-        melodyPattern: [0, 4, 2, 4, 0, 5, 4, 2, 0, 0, 2, 3, 2, 0, -1, 4]
+        title: "DVRST - CLOSE EYES (RUSSIAN PHONK)",
+        file: "/assets/music/dvrst-close-eyes.mp3",
+        bpm: 130,
+        scale: [164.81, 185.00, 196.00, 220.00, 246.94, 261.63, 293.66, 329.63],
+        melodyPattern: [0, 2, 3, 2, 0, 5, 4, 3, 2, 3, 5, 4, 2, 0, 2, 3]
       },
       {
         id: 2,
-        title: "DHOOM ACTION (CHASE BEATS)",
-        file: "/assets/music/dhoom-action.mp3",
+        title: "KORDHELL - MURDER IN MY MIND",
+        file: "/assets/music/kordhell-murder-in-my-mind.mp3",
         bpm: 140,
-        scale: [196, 220, 233.08, 261.63, 293.66, 311.13, 349.23, 392],
+        scale: [130.81, 146.83, 155.56, 174.61, 196.00, 207.65, 233.08, 261.63],
         melodyPattern: [0, 0, 3, 4, 3, 0, 1, 0, 4, 4, 5, 6, 5, 4, 3, 1]
       },
       {
         id: 3,
-        title: "SALAAME SALAAME (WAR CELEBRATION)",
-        file: "/assets/music/salaame-salaame.mp3",
-        bpm: 132,
-        scale: [261.63, 293.66, 329.63, 349.23, 392.0, 440, 493.88, 523.25],
+        title: "INTERWORLD - METAMORPHOSIS",
+        file: "/assets/music/interworld-metamorphosis.mp3",
+        bpm: 135,
+        scale: [146.83, 164.81, 174.61, 196.00, 220.00, 246.94, 261.63, 293.66],
         melodyPattern: [0, 2, 4, 0, 2, 4, 5, 4, 2, 4, 2, 0, 4, 2, 0, 2]
+      },
+      {
+        id: 4,
+        title: "MOONDEITY X INTERWORLD - ONE CHANCE",
+        file: "/assets/music/moondeity-one-chance.mp3",
+        bpm: 138,
+        scale: [110.00, 123.47, 130.81, 146.83, 164.81, 174.61, 196.00, 220.00],
+        melodyPattern: [0, 3, 5, 3, 0, 4, 3, 0, 5, 4, 3, 2, 0, 3, 2, 0]
       }
     ];
 
@@ -59,12 +67,12 @@ export class BollywoodMusic {
 
     // Dialogue quotes for announcer
     this.quotes = {
-      start: ["Aata Majhi Satakli! Battle Begins!", "Picture abhi baaki hai mere dost!"],
-      kill: ["Dhamaka!", "Dishyum!", "Khatam! Tata! Bye-Bye!", "Fataak!"],
-      boost: ["Dhoom Speed!", "Shah Rukh Drift!"],
-      boss: ["Mogambo Khush Hua! Titan Boss is here!", "Don ko pakadna mushkil hi nahi, namumkin hai!"],
-      victory: ["Bole toh ekdum jhakaas! Victory!", "Don always wins!"],
-      defeat: ["Haar kar jeetne waale ko Baazigar kehte hain!"]
+      start: ["BATTLE ENGAGED! CRANK THE PHONK!", "LOCK AND LOAD! DEMOLISH EVERYTHING!", "WAR ENGINE ONLINE!"],
+      kill: ["TARGET DEMOLISHED!", "FATALITY!", "OBLITERATED!", "CLEAN KILL!", "DHAMAKA!"],
+      boost: ["NITRO OVERDRIVE!", "PHONK DRIFT ACTIVATED!", "MAXIMUM THRUST!"],
+      boss: ["WARNING: TITAN MK-IV HAS ENTERED THE ARENA!", "BOSS BATTLE IMMINENT! ENGAGE!"],
+      victory: ["SECTOR DOMINATED! TOTAL VICTORY!", "APEX PREDATOR OF THE BATTLEFIELD!"],
+      defeat: ["SYSTEM OFFLINE! REGROUP AND STRIKE BACK!"]
     };
   }
 
@@ -223,55 +231,67 @@ export class BollywoodMusic {
   playStep(step, track) {
     const t = this.ctx.currentTime;
 
-    // 1. Punjabi Dhol Bass Drum
+    // 1. Phonk Distorted 808 Sub-Bass
     if (step === 0 || step === 6 || step === 10 || step === 14 || step === 16 || step === 22 || step === 26) {
-      this.playDholBass(t, step === 0 || step === 16 ? 1.0 : 0.85);
+      this.play808Bass(t, step === 0 || step === 16 ? 1.0 : 0.85);
     }
 
-    // 2. Dholak Sharp Slap
-    if (step === 4 || step === 12 || step === 20 || step === 28 || step === 15 || step === 31) {
-      this.playDholSlap(t, step === 4 || step === 20 ? 0.9 : 0.7);
+    // 2. Phonk Snare / Clap
+    if (step === 4 || step === 12 || step === 20 || step === 28) {
+      this.playPhonkSnare(t, 0.8);
     }
 
-    // 3. Tabla Tick
-    if (step % 2 === 1) {
-      this.playTablaTick(t, 0.35);
+    // 3. Phonk Hi-Hat rolls
+    if (step % 2 === 1 || step % 4 === 3) {
+      this.playHiHat(t, 0.25);
     }
 
-    // 4. Brass Stabs
+    // 4. Heavy Brass / Synth Stabs
     if (step === 0 || step === 8 || step === 16 || step === 24) {
-      const rootFreq = track.scale[0] / 2;
-      this.playBrassStab(t, rootFreq, 0.45);
+      const rootFreq = track.scale[0];
+      this.playSynthStab(t, rootFreq, 0.45);
     }
 
-    // 5. Bollywood Sitar Melody
+    // 5. Roland 808 Phonk Cowbell Lead
     const noteIdx = track.melodyPattern[step % track.melodyPattern.length];
     if (noteIdx >= 0 && noteIdx < track.scale.length) {
-      const freq = track.scale[noteIdx] * (step > 16 ? 1.5 : 1.0);
-      this.playSitarPluck(t, freq, 0.4);
+      const freq = track.scale[noteIdx] * (step > 16 ? 2.0 : 1.5);
+      this.playPhonkCowbell(t, freq, 0.45);
     }
   }
 
-  playDholBass(time, intensity = 1.0) {
+  play808Bass(time, intensity = 1.0) {
     const osc = this.ctx.createOscillator();
     const gain = this.ctx.createGain();
-    osc.type = 'sine';
-    osc.frequency.setValueAtTime(140, time);
-    osc.frequency.exponentialRampToValueAtTime(45, time + 0.14);
-    gain.gain.setValueAtTime(0.8 * intensity, time);
-    gain.gain.exponentialRampToValueAtTime(0.001, time + 0.22);
-    osc.connect(gain);
+    const distortion = this.ctx.createWaveShaper();
+
+    // Subtle distortion curve for crunchy 808
+    const curve = new Float32Array(256);
+    for (let i = 0; i < 256; i++) {
+      const x = (i * 2) / 256 - 1;
+      curve[i] = (Math.PI + 4) * x / (Math.PI + 4 * Math.abs(x));
+    }
+    distortion.curve = curve;
+
+    osc.type = 'triangle';
+    osc.frequency.setValueAtTime(120, time);
+    osc.frequency.exponentialRampToValueAtTime(38, time + 0.18);
+    gain.gain.setValueAtTime(0.9 * intensity, time);
+    gain.gain.exponentialRampToValueAtTime(0.001, time + 0.32);
+
+    osc.connect(distortion);
+    distortion.connect(gain);
     gain.connect(this.gainNode);
     osc.start(time);
-    osc.stop(time + 0.25);
+    osc.stop(time + 0.35);
   }
 
-  playDholSlap(time, intensity = 0.8) {
+  playPhonkSnare(time, intensity = 0.8) {
     const osc = this.ctx.createOscillator();
     const oscGain = this.ctx.createGain();
     osc.type = 'triangle';
-    osc.frequency.setValueAtTime(650, time);
-    osc.frequency.exponentialRampToValueAtTime(180, time + 0.08);
+    osc.frequency.setValueAtTime(320, time);
+    osc.frequency.exponentialRampToValueAtTime(90, time + 0.08);
     oscGain.gain.setValueAtTime(0.4 * intensity, time);
     oscGain.gain.exponentialRampToValueAtTime(0.001, time + 0.09);
     osc.connect(oscGain);
@@ -279,7 +299,7 @@ export class BollywoodMusic {
     osc.start(time);
     osc.stop(time + 0.1);
 
-    const bufferSize = this.ctx.sampleRate * 0.08;
+    const bufferSize = this.ctx.sampleRate * 0.12;
     const buffer = this.ctx.createBuffer(1, bufferSize, this.ctx.sampleRate);
     const data = buffer.getChannelData(0);
     for (let i = 0; i < bufferSize; i++) data[i] = Math.random() * 2 - 1;
@@ -287,66 +307,99 @@ export class BollywoodMusic {
     const noise = this.ctx.createBufferSource();
     noise.buffer = buffer;
     const filter = this.ctx.createBiquadFilter();
-    filter.type = 'bandpass';
-    filter.frequency.setValueAtTime(1200, time);
-    filter.Q.value = 3.0;
+    filter.type = 'highpass';
+    filter.frequency.setValueAtTime(900, time);
 
     const noiseGain = this.ctx.createGain();
     noiseGain.gain.setValueAtTime(0.6 * intensity, time);
-    noiseGain.gain.exponentialRampToValueAtTime(0.001, time + 0.08);
+    noiseGain.gain.exponentialRampToValueAtTime(0.001, time + 0.11);
 
     noise.connect(filter);
     filter.connect(noiseGain);
     noiseGain.connect(this.gainNode);
     noise.start(time);
-    noise.stop(time + 0.09);
+    noise.stop(time + 0.12);
   }
 
-  playTablaTick(time, intensity = 0.3) {
-    const osc = this.ctx.createOscillator();
+  playHiHat(time, intensity = 0.25) {
+    const bufferSize = this.ctx.sampleRate * 0.04;
+    const buffer = this.ctx.createBuffer(1, bufferSize, this.ctx.sampleRate);
+    const data = buffer.getChannelData(0);
+    for (let i = 0; i < bufferSize; i++) data[i] = Math.random() * 2 - 1;
+
+    const noise = this.ctx.createBufferSource();
+    noise.buffer = buffer;
+    const filter = this.ctx.createBiquadFilter();
+    filter.type = 'highpass';
+    filter.frequency.setValueAtTime(6500, time);
+
     const gain = this.ctx.createGain();
-    osc.type = 'sine';
-    osc.frequency.setValueAtTime(880, time);
-    osc.frequency.exponentialRampToValueAtTime(320, time + 0.04);
-    gain.gain.setValueAtTime(0.3 * intensity, time);
-    gain.gain.exponentialRampToValueAtTime(0.001, time + 0.05);
-    osc.connect(gain);
+    gain.gain.setValueAtTime(intensity, time);
+    gain.gain.exponentialRampToValueAtTime(0.001, time + 0.035);
+
+    noise.connect(filter);
+    filter.connect(gain);
     gain.connect(this.gainNode);
-    osc.start(time);
-    osc.stop(time + 0.06);
+    noise.start(time);
+    noise.stop(time + 0.04);
   }
 
-  playBrassStab(time, freq, intensity = 0.4) {
-    const osc = this.ctx.createOscillator();
+  playSynthStab(time, freq, intensity = 0.45) {
+    const osc1 = this.ctx.createOscillator();
+    const osc2 = this.ctx.createOscillator();
     const filter = this.ctx.createBiquadFilter();
     const gain = this.ctx.createGain();
 
-    osc.type = 'sawtooth';
-    osc.frequency.setValueAtTime(freq, time);
+    osc1.type = 'sawtooth';
+    osc1.frequency.setValueAtTime(freq, time);
+    osc2.type = 'sawtooth';
+    osc2.frequency.setValueAtTime(freq * 1.01, time); // slight detune
+
     filter.type = 'lowpass';
-    filter.frequency.setValueAtTime(1800, time);
-    filter.frequency.exponentialRampToValueAtTime(500, time + 0.22);
+    filter.frequency.setValueAtTime(2200, time);
+    filter.frequency.exponentialRampToValueAtTime(400, time + 0.2);
+
     gain.gain.setValueAtTime(0.4 * intensity, time);
     gain.gain.exponentialRampToValueAtTime(0.001, time + 0.25);
 
-    osc.connect(filter);
+    osc1.connect(filter);
+    osc2.connect(filter);
     filter.connect(gain);
     gain.connect(this.gainNode);
-    osc.start(time);
-    osc.stop(time + 0.28);
+    osc1.start(time);
+    osc2.start(time);
+    osc1.stop(time + 0.26);
+    osc2.stop(time + 0.26);
   }
 
-  playSitarPluck(time, freq, intensity = 0.4) {
-    const osc = this.ctx.createOscillator();
+  // Authentic 808 Phonk Cowbell (dual square waves + bandpass filter)
+  playPhonkCowbell(time, freq, intensity = 0.45) {
+    const osc1 = this.ctx.createOscillator();
+    const osc2 = this.ctx.createOscillator();
+    const bandpass = this.ctx.createBiquadFilter();
     const gain = this.ctx.createGain();
-    osc.type = 'sawtooth';
-    osc.frequency.setValueAtTime(freq, time);
-    gain.gain.setValueAtTime(0.35 * intensity, time);
-    gain.gain.exponentialRampToValueAtTime(0.001, time + 0.26);
-    osc.connect(gain);
+
+    osc1.type = 'square';
+    osc1.frequency.setValueAtTime(freq, time);
+    osc2.type = 'square';
+    osc2.frequency.setValueAtTime(freq * 1.48, time); // Roland 808 cowbell ratio
+
+    bandpass.type = 'bandpass';
+    bandpass.frequency.setValueAtTime(freq * 1.2, time);
+    bandpass.Q.value = 4.0;
+
+    gain.gain.setValueAtTime(0.5 * intensity, time);
+    gain.gain.exponentialRampToValueAtTime(0.001, time + 0.3);
+
+    osc1.connect(bandpass);
+    osc2.connect(bandpass);
+    bandpass.connect(gain);
     gain.connect(this.gainNode);
-    osc.start(time);
-    osc.stop(time + 0.28);
+
+    osc1.start(time);
+    osc2.start(time);
+    osc1.stop(time + 0.32);
+    osc2.stop(time + 0.32);
   }
 
   // --- Bollywood Dialogue Announcer ---

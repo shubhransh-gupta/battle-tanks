@@ -25,27 +25,28 @@ export class HUD {
         <header class="hud-top-bar">
           <div class="hud-brand">
             <span class="hud-title">BATTLE TANKS</span>
-            <span class="hud-bollywood-pill">DHAMAKA EDITION 🇮🇳</span>
+            <span class="hud-bollywood-pill">AGGRESSIVE PHONK 💀</span>
             <span class="hud-badge" id="hud-fps-pill">60 FPS</span>
           </div>
 
-          <!-- Bollywood Music Player Bar -->
+          <!-- Phonk / Soundtrack Player Bar -->
           <div class="hud-music-player" id="hud-music-player">
-            <button class="hud-music-btn" id="btn-music-toggle" title="Play / Pause Bollywood Music [P]">🎶 PAUSE</button>
+            <button class="hud-music-btn" id="btn-music-toggle" title="Play / Pause Soundtrack [P]">🎶 PAUSE</button>
             <div class="hud-music-track-info">
               <span class="music-icon">📻</span>
-              <select class="hud-music-select" id="hud-music-select" title="Choose Bollywood Track">
-                <option value="0">DHOOM MACHALE (TITLE ANTHEM)</option>
-                <option value="1">DON - THE THEME (SRK ACTION)</option>
-                <option value="2">DHOOM ACTION (CHASE BEATS)</option>
-                <option value="3">SALAAME SALAAME (WAR CELEBRATION)</option>
+              <select class="hud-music-select" id="hud-music-select" title="Choose Phonk Track">
+                <option value="0">🔥 ELLEY DUHÉ - MIDDLE OF THE NIGHT</option>
+                <option value="1">💀 DVRST - CLOSE EYES (RUSSIAN PHONK)</option>
+                <option value="2">🩸 KORDHELL - MURDER IN MY MIND</option>
+                <option value="3">⚡ INTERWORLD - METAMORPHOSIS</option>
+                <option value="4">🚀 MOONDEITY X INTERWORLD - ONE CHANCE</option>
               </select>
               <div class="hud-eq-bars" id="hud-eq-bars">
                 <span class="eq-bar"></span><span class="eq-bar"></span><span class="eq-bar"></span><span class="eq-bar"></span>
                 <span class="eq-bar"></span><span class="eq-bar"></span><span class="eq-bar"></span><span class="eq-bar"></span>
               </div>
             </div>
-            <button class="hud-music-btn" id="btn-music-next" title="Next Bollywood Song [N]">⏭ NEXT</button>
+            <button class="hud-music-btn" id="btn-music-next" title="Next Song [N]">⏭ NEXT</button>
           </div>
 
           <div class="hud-center-status">
@@ -167,23 +168,23 @@ export class HUD {
         <!-- 8. Start Screen Modal -->
         <div class="hud-modal" id="modal-start">
           <div class="hud-modal-card">
-            <div class="modal-badge">BOLLYWOOD ACTION WARFARE EDITION 💥</div>
+            <div class="modal-badge">AGGRESSIVE PHONK WARFARE EDITION ⚡</div>
             <h1 class="modal-title">BATTLE TANKS</h1>
-            <p class="modal-subtitle">DHAMAKA EDITION // FULL BOLLYWOOD ACTION</p>
+            <p class="modal-subtitle">TACTICAL ARMOR COMBAT // AGGRESSIVE DRIFT PHONK</p>
             <p class="modal-desc">
-              Hostile mechanized rogue forces have captured Sector 7. Deploy your heavy combat tank, crank up the Bollywood beats, blast through scout squadrons, and defeat the colossal Titan MK-IV Boss!
+              Hostile mechanized rogue forces have captured Sector 7. Deploy your heavy combat tank, crank up the aggressive phonk beats, blast through scout squadrons, and defeat the colossal Titan MK-IV Boss!
             </p>
             <div class="modal-controls-grid">
               <div class="control-key-item"><kbd>W</kbd><kbd>A</kbd><kbd>S</kbd><kbd>D</kbd><span>Drive & Steer</span></div>
               <div class="control-key-item"><kbd>MOUSE</kbd><span>Aim Turret</span></div>
               <div class="control-key-item"><kbd>CLICK</kbd> / <kbd>SPACE</kbd><span>Fire Cannon</span></div>
-              <div class="control-key-item"><kbd>SHIFT</kbd><span>Dhoom Boost</span></div>
-              <div class="control-key-item"><kbd>N</kbd><span>Next Bollywood Track</span></div>
+              <div class="control-key-item"><kbd>SHIFT</kbd><span>Nitro Drift Boost</span></div>
+              <div class="control-key-item"><kbd>N</kbd><span>Next Phonk Track</span></div>
               <div class="control-key-item"><kbd>P</kbd><span>Toggle Music</span></div>
               <div class="control-key-item"><kbd>C</kbd><span>Toggle Camera</span></div>
               <div class="control-key-item"><kbd>R</kbd><span>Quick Repair</span></div>
             </div>
-            <button class="hud-primary-btn" id="btn-start-game">START DHAMAKA 🚀</button>
+            <button class="hud-primary-btn" id="btn-start-game">START COMBAT 🚀</button>
           </div>
         </div>
 

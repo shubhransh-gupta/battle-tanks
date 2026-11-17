@@ -1,4 +1,4 @@
-# 🚀 Battle Tanks: Dhamaka Edition 🇮🇳
+# 🚀 Battle Tanks: Aggressive Phonk Edition 🔥
 
 [![Live Demo](https://img.shields.io/badge/Live%20Demo-playbattletanks.vercel.app-000000?style=for-the-badge&logo=vercel&logoColor=white)](https://playbattletanks.vercel.app)
 [![GitHub Repo](https://img.shields.io/badge/GitHub-shubhransh--gupta%2Fbattle--tanks-181717?style=for-the-badge&logo=github)](https://github.com/shubhransh-gupta/battle-tanks)
@@ -13,13 +13,13 @@
 > 🎮 **Play Live Now:** **[https://playbattletanks.vercel.app](https://playbattletanks.vercel.app)**
 >
 > **High-Performance 3D Arcade Tank Combat Simulator built with Three.js, WebGL, Web Audio API, and Vite.**
-> Inspired by classic 3D armor games and powered by an authentic high-voltage Bollywood action soundtrack & aesthetic.
+> Fueled by an aggressive, adrenaline-pumping soundtrack featuring **Middle of the Night**, **DVRST (Russian Phonk)**, **Kordhell**, **Interworld**, and **MoonDeity**!
 
 ---
 
 ## 🌟 Overview
 
-**Battle Tanks** reimagines 3D browser tank combat into a buttery-smooth, zero-lag experience. Engineered from the ground up to eliminate frame drops and geometry bottlenecks, it delivers locked 60+ FPS on both desktop and mobile browsers, paired with authentic Bollywood action sound design, dynamic lighting, articulated caterpillar tracks, and tactical wave combat.
+**Battle Tanks** reimagines 3D browser tank combat into a buttery-smooth, zero-lag experience. Engineered from the ground up to eliminate frame drops and geometry bottlenecks, it delivers locked 60+ FPS on both desktop and mobile browsers, paired with high-voltage Russian Drift Phonk sound design, dynamic lighting, articulated caterpillar tracks, and tactical wave combat.
 
 ---
 
@@ -32,15 +32,17 @@
 - **Flanking AI & Laser Sight**: Enemy scout tanks flank the player, communicate tactical formations, and project bright crimson targeting laser beams to telegraph shots.
 - **Colossal Titan MK-IV Boss Mech**: Final wave encounter featuring a massive obsidian siege mech, rotating command superstructure, glowing crimson spotlight eye, enrage state, and triple-spread mortar barrage.
 
-### 📻 Bollywood Action Jukebox
-- **Authentic Soundtrack**: Built-in Web Audio Jukebox streaming iconic high-energy tracks:
-  1. 📻 **Dhoom Machale (Title Anthem)** — Iconic action bhangra beat
-  2. 📻 **Don — The Theme (SRK Action)** — Cyber brass chase groove
-  3. 📻 **Dhoom Action (Chase Beats)** — High-octane battle percussion
-  4. 📻 **Salaame Salaame (War Celebration)** — Victory anthem
+### 💀 Aggressive Phonk Combat Jukebox
+- **High-Octane Drift & Russian Phonk Soundtrack**: Built-in Web Audio Jukebox streaming iconic aggressive battle tracks:
+  1. 🔥 **Elley Duhé — Middle of the Night** — Legendary dark action anthem
+  2. 💀 **DVRST — Close Eyes (Russian Phonk Anthem)** — The undisputed king of drift phonk
+  3. 🩸 **Kordhell — Murder In My Mind** — Relentless 808 cowbell assault
+  4. ⚡ **Interworld — Metamorphosis** — Menacing dark Russian drift phonk
+  5. 🚀 **MoonDeity x Interworld — One Chance** — Ultra-heavy aggressive combat phonk
 - **Dancing Equalizer Visualizer**: Real-time multi-band audio frequency analyzer driving animated dancing equalizer bars directly in the tactical HUD.
 - **Interactive Controls**: Dropdown track selector, `⏭ NEXT` track button (`[N]`), `🎶 PLAY/PAUSE` toggle (`[P]`), and mute options.
-- **Iconic Dialogue Announcer**: Famous action cinema callouts on streaks, kills, and boss alerts (*"Aata Majhi Satakli!"*, *"Dhamaka!"*, *"Dishyum!"*, *"Mogambo Khush Hua!"*, *"Haar kar jeetne waale ko Baazigar kehte hain!"*).
+- **Procedural 808 Phonk Synthesizer Fallback**: Built-in Web Audio synthesizer generating distorted 808 sub-bass slides, Roland 808 square-wave cowbells, and snappy phonk hi-hats in real-time.
+- **Combat Announcer**: High-adrenaline battle callouts on streaks, kills, and boss alerts (*"TARGET DEMOLISHED!"*, *"OBLITERATED!"*, *"NITRO OVERDRIVE!"*, *"WARNING: TITAN MK-IV BOSS DETECTED!"*).
 
 ### ⚡ Performance & Optimization
 - **Locked 60 FPS**: Geometry instancing, memory-conscious particle pooling, optimized shadow camera frustums, and Draco mesh compression.
@@ -57,9 +59,9 @@
 | <kbd>W</kbd> <kbd>A</kbd> <kbd>S</kbd> <kbd>D</kbd> / Arrow Keys | Drive & Steer Tank Chassis |
 | <kbd>Mouse Move</kbd> | Aim Turret & Cannon (3D Ground Raycast) |
 | <kbd>Left Click</kbd> / <kbd>Space</kbd> | Fire Main Cannon |
-| <kbd>Shift</kbd> | Dhoom Boost (High-Speed Turbo Drift) |
+| <kbd>Shift</kbd> | Nitro Drift Boost (High-Speed Turbo Drift) |
 | <kbd>R</kbd> | Quick Repair / Redeploy Tank |
-| <kbd>N</kbd> | Next Bollywood Soundtrack |
+| <kbd>N</kbd> | Next Aggressive Phonk Track |
 | <kbd>P</kbd> | Play / Pause Music |
 | <kbd>M</kbd> | Toggle SFX Sound |
 | <kbd>C</kbd> | Toggle Camera Mode (Isometric / Action Chase) |
@@ -84,7 +86,7 @@ better-tanks/
 │   ├── assets/
 │   │   ├── audio/        # Combat SFX (cannon, boost, explosions, engine)
 │   │   ├── models/       # 3D GLTF models (player, fodder, boss, arena props)
-│   │   ├── music/        # Authentic Bollywood soundtracks (MP3)
+│   │   ├── music/        # Aggressive Phonk & Combat soundtracks (MP3)
 │   │   └── textures/     # Texture atlas & ground lightmaps
 │   ├── basis/            # Basis Universal transcoder WASM
 │   └── draco/            # Google Draco decoder WASM

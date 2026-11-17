@@ -183,7 +183,7 @@ class Game {
     if (waveNum === 5) {
       this.boss.spawn(0, -45, Math.PI);
       this.engine.addShake(1.4);
-      this.hud.showBollywoodCallout('⚠️ MOGAMBO KHUSH HUA! TITAN ARRIVES! ⚠️');
+      this.hud.showBollywoodCallout('⚠️ WARNING: TITAN MK-IV BOSS DETECTED! ⚠️');
       this.music.speakQuote('boss');
 
       // Escort fodder tanks
@@ -194,7 +194,7 @@ class Game {
 
     // Normal waves: spawn fodder squad
     const count = Math.min(6, 1 + waveNum);
-    this.hud.showBollywoodCallout(`WAVE ${waveNum}: AATA MAJHI SATAKLI! 🔥`);
+    this.hud.showBollywoodCallout(`WAVE ${waveNum}: COMBAT SQUAD ENGAGED! 🔥`);
 
     const spawnPositions = [
       { x: 38, z: -42 },
@@ -328,7 +328,7 @@ class Game {
     // 7. Update Props (Explosive Barrels)
     this.props.update(dt, combatTargets, (explodePos) => {
       this.engine.addShake(1.3);
-      this.hud.showBollywoodCallout('💥 MAHA DHAMAKA! 💥');
+      this.hud.showBollywoodCallout('💥 MEGA BLAST! 💥');
     });
 
     // 8. Update Field Collectibles
@@ -345,7 +345,7 @@ class Game {
         this.hud.showBollywoodCallout('HULL REPAIRED! 🛠️');
       }
       if (collectedType === 'fuel') {
-        this.hud.showBollywoodCallout('DHOOM BOOST FULL! 🚀');
+        this.hud.showBollywoodCallout('NITRO BOOST CHARGED! 🚀');
       }
     });
 
